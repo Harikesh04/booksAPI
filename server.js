@@ -39,6 +39,10 @@ process.on("uncaughtException", (err) => {
 
   app.use("/api/v1", book);
 
+  app.get("/", (req, res) => {
+    res.send("Nice working");
+  });
+
   
 
 
