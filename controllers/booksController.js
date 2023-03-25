@@ -1,6 +1,6 @@
 import { catchAsynError } from "../middleware/catchAsyncError.js";
 import Books from "../models/bookModel.js";
-import ErrorHandler from "../utils/errorhandler.js";
+import ErrorHandler from "../utils/errorHandler.js";
 import ApiFeatures from "../utils/ApiFeatures.js";
 
 export const createBook = catchAsynError(async (req, res, next) => {
