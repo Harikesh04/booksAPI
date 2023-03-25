@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 if (process.env.NODE_ENV!=="PRODUCTION") {
     dotenv.config({ path: "config/config.env" });
-  }
+  }      
 
 
 process.on("uncaughtException", (err) => {
